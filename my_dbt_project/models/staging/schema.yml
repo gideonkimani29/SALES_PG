@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_sales
+    columns:
+      - name: sales_id
+        tests: [unique, not_null]
+
+  - name: stg_products
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+
+  - name: stg_employees
+    columns:
+      - name: employee_id
+        tests: [unique, not_null]
+
+  - name: stg_categories
+    columns:
+      - name: category_id
+        tests: [unique, not_null]
+
+  - name: stg_cities
+    columns:
+      - name: city_id
+        tests: [unique, not_null]

@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: public
+    schema: public
+    tables:
+      - name: sales
+      - name: products
+      - name: customers
+      - name: employees
+      - name: categories
+      - name: cities

@@ -1,0 +1,38 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: "One row per customer with city details"
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+
+  - name: dim_employee
+    description: "One row per employee with city and tenure info"
+    columns:
+      - name: employee_id
+        tests: [unique, not_null]
+
+  - name: dim_product
+    description: "One row per product with category"
+    columns:
+      - name: product_id
+        tests: [unique, not_null]
+
+  - name: dim_location
+    description: "One row per city"
+    columns:
+      - name: location_id
+        tests: [unique, not_null]
+
+  - name: dim_date
+    description: "Date dimension spanning the full sales range"
+    columns:
+      - name: date_id
+        tests: [unique, not_null]
+
+  - name: fct_sales
+    description: "One row per sales transaction"
+    columns:
+      - name: sales_id
+        tests: [unique, not_null]
